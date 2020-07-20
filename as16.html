@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>CALCULATOR</h2>
+    <script>
+        a=prompt("ENTER TWO NUMBERS:")
+        b=Number(prompt("ENTER YOUR CHOICE: 1. ADDIION 2.SUBTRACTION 3.MULTIPLICATION 4.DIVISION 5.SQAUREROOT 6.PERCENTAGE"))
+    x=a.split(" ")
+    p=Number(x[0])
+    q=Number(x[1])
+    console.log(`TWO NUMBERS ARE ${p} and ${q}`);
+    switch(b){
+        case 1:
+            console.log("THE SUM OF TWO NUMBERS IS :"+(p+q))
+        case 2:
+            console.log("THE DIFFERENCE OF TWO NUMBER IS:"+(p-q))
+        case 3:
+            console.log("THE PRODUCT OF TWO NUMBER IS:"+(p*q))
+        case 4:
+            console.log("THE DIVISION OF TWO NUMBER IS:"+(p/q))
+        case 5:
+            console.log(`THE SQUAREROOT OF ${p} is ${Math.sqrt(p)} AND THE SQUAREROOT OF ${q} is ${Math.sqrt(q)}`)
+        case 6:
+            console.log(`${p} % of ${q} is: `+(p/100*q))
+        }
+    </script>
+</body>
+</html>
